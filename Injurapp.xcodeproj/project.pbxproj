@@ -11,7 +11,10 @@
 		6EBCF7462BEA906000D07C61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF7452BEA906000D07C61 /* ContentView.swift */; };
 		6EBCF7482BEA906800D07C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF7472BEA906800D07C61 /* Assets.xcassets */; };
 		6EBCF74B2BEA906800D07C61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF74A2BEA906800D07C61 /* Preview Assets.xcassets */; };
-		6EBCF7552BEA906900D07C61 /* InjurappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF7542BEA906900D07C61 /* InjurappTests.swift */; };
+		6EDA3DFB2BF2877C007523BB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFA2BF2877C007523BB /* PostView.swift */; };
+		6EDA3DFD2BF28B57007523BB /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */; };
+		6EDA3DFF2BF29014007523BB /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */; };
+		6EDA3E022BF29124007523BB /* InjurappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3E012BF29124007523BB /* InjurappUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 		6EBCF7472BEA906800D07C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EBCF74A2BEA906800D07C61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6EBCF7502BEA906900D07C61 /* InjurappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjurappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EBCF7542BEA906900D07C61 /* InjurappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjurappTests.swift; sourceTree = "<group>"; };
 		6EBCF75A2BEA906900D07C61 /* InjurappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjurappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EDA3DFA2BF2877C007523BB /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
+		6EDA3E012BF29124007523BB /* InjurappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjurappUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			children = (
 				6EBCF7422BEA906000D07C61 /* Injurapp */,
 				6EBCF7532BEA906900D07C61 /* InjurappTests */,
+				6EDA3E002BF290CD007523BB /* InjurappUITests */,
 				6EBCF7412BEA906000D07C61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +96,10 @@
 		6EBCF7422BEA906000D07C61 /* Injurapp */ = {
 			isa = PBXGroup;
 			children = (
-				6EBCF7432BEA906000D07C61 /* InjurappApp.swift */,
 				6EBCF7452BEA906000D07C61 /* ContentView.swift */,
+				6EBCF7432BEA906000D07C61 /* InjurappApp.swift */,
+				6EDA3DFA2BF2877C007523BB /* PostView.swift */,
+				6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */,
 				6EBCF7472BEA906800D07C61 /* Assets.xcassets */,
 				6EBCF7492BEA906800D07C61 /* Preview Content */,
 			);
@@ -108,9 +117,17 @@
 		6EBCF7532BEA906900D07C61 /* InjurappTests */ = {
 			isa = PBXGroup;
 			children = (
-				6EBCF7542BEA906900D07C61 /* InjurappTests.swift */,
+				6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */,
 			);
 			path = InjurappTests;
+			sourceTree = "<group>";
+		};
+		6EDA3E002BF290CD007523BB /* InjurappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA3E012BF29124007523BB /* InjurappUITests.swift */,
+			);
+			path = InjurappUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +201,12 @@
 					};
 					6EBCF74F2BEA906900D07C61 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 6EBCF73F2BEA906000D07C61;
 					};
 					6EBCF7592BEA906900D07C61 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 6EBCF73F2BEA906000D07C61;
 					};
 				};
@@ -243,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDA3DFD2BF28B57007523BB /* PostViewModel.swift in Sources */,
 				6EBCF7462BEA906000D07C61 /* ContentView.swift in Sources */,
+				6EDA3DFB2BF2877C007523BB /* PostView.swift in Sources */,
 				6EBCF7442BEA906000D07C61 /* InjurappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EBCF7552BEA906900D07C61 /* InjurappTests.swift in Sources */,
+				6EDA3DFF2BF29014007523BB /* PostViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDA3E022BF29124007523BB /* InjurappUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,11 +428,13 @@
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,9 +442,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.Injurapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,11 +462,13 @@
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,9 +476,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.Injurapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -458,17 +490,27 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.InjurappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Injurapp.app/Injurapp";
 			};
 			name = Debug;
@@ -478,17 +520,26 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.InjurappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Injurapp.app/Injurapp";
 			};
 			name = Release;
@@ -497,14 +548,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.InjurappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Injurapp;
@@ -515,10 +573,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49SA3PV5N8;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.InjurappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
