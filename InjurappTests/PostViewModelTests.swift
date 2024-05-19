@@ -13,11 +13,13 @@ final class PostViewModelTests: XCTestCase {
 
     func testInit_postValuesAreInjected_OutputsAreTheSame() {
         let sut = PostViewModel(
+            id: "1",
             title: "Title",
             description: "Description",
             isLoading: false
         )
         
+        XCTAssertEqual(sut.id, "1")
         XCTAssertEqual(sut.title, "Title")
         XCTAssertEqual(sut.description, "Description")
         XCTAssertFalse(sut.isLoading)

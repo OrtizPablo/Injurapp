@@ -12,7 +12,9 @@ struct InjurappApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostListView(
+                viewModel: PostListViewModel()
+            )
         }
     }
 }

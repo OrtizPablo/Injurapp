@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6EBCF7442BEA906000D07C61 /* InjurappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF7432BEA906000D07C61 /* InjurappApp.swift */; };
-		6EBCF7462BEA906000D07C61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF7452BEA906000D07C61 /* ContentView.swift */; };
+		6EBCF7462BEA906000D07C61 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF7452BEA906000D07C61 /* PostListView.swift */; };
 		6EBCF7482BEA906800D07C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF7472BEA906800D07C61 /* Assets.xcassets */; };
 		6EBCF74B2BEA906800D07C61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF74A2BEA906800D07C61 /* Preview Assets.xcassets */; };
 		6EDA3DFB2BF2877C007523BB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFA2BF2877C007523BB /* PostView.swift */; };
 		6EDA3DFD2BF28B57007523BB /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */; };
 		6EDA3DFF2BF29014007523BB /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */; };
 		6EDA3E022BF29124007523BB /* InjurappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3E012BF29124007523BB /* InjurappUITests.swift */; };
+		6EDA3E042BFA771E007523BB /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3E032BFA771E007523BB /* PostListViewModel.swift */; };
+		6EDA3E062BFA7A8D007523BB /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA3E052BFA7A8D007523BB /* PostListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		6EBCF7402BEA906000D07C61 /* Injurapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Injurapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBCF7432BEA906000D07C61 /* InjurappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjurappApp.swift; sourceTree = "<group>"; };
-		6EBCF7452BEA906000D07C61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6EBCF7452BEA906000D07C61 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		6EBCF7472BEA906800D07C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EBCF74A2BEA906800D07C61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6EBCF7502BEA906900D07C61 /* InjurappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjurappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,8 @@
 		6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
 		6EDA3E012BF29124007523BB /* InjurappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjurappUITests.swift; sourceTree = "<group>"; };
+		6EDA3E032BFA771E007523BB /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		6EDA3E052BFA7A8D007523BB /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,9 @@
 		6EBCF7422BEA906000D07C61 /* Injurapp */ = {
 			isa = PBXGroup;
 			children = (
-				6EBCF7452BEA906000D07C61 /* ContentView.swift */,
 				6EBCF7432BEA906000D07C61 /* InjurappApp.swift */,
+				6EBCF7452BEA906000D07C61 /* PostListView.swift */,
+				6EDA3E032BFA771E007523BB /* PostListViewModel.swift */,
 				6EDA3DFA2BF2877C007523BB /* PostView.swift */,
 				6EDA3DFC2BF28B57007523BB /* PostViewModel.swift */,
 				6EBCF7472BEA906800D07C61 /* Assets.xcassets */,
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				6EDA3DFE2BF29014007523BB /* PostViewModelTests.swift */,
+				6EDA3E052BFA7A8D007523BB /* PostListViewModelTests.swift */,
 			);
 			path = InjurappTests;
 			sourceTree = "<group>";
@@ -263,7 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EDA3DFD2BF28B57007523BB /* PostViewModel.swift in Sources */,
-				6EBCF7462BEA906000D07C61 /* ContentView.swift in Sources */,
+				6EBCF7462BEA906000D07C61 /* PostListView.swift in Sources */,
+				6EDA3E042BFA771E007523BB /* PostListViewModel.swift in Sources */,
 				6EDA3DFB2BF2877C007523BB /* PostView.swift in Sources */,
 				6EBCF7442BEA906000D07C61 /* InjurappApp.swift in Sources */,
 			);
@@ -273,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDA3E062BFA7A8D007523BB /* PostListViewModelTests.swift in Sources */,
 				6EDA3DFF2BF29014007523BB /* PostViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

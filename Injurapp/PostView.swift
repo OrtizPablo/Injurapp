@@ -42,6 +42,7 @@ struct PostView_Previews: PreviewProvider {
     static var previews: some View {
         PostView(
             viewModel: .init(
+                id: "1",
                 title: "My title",
                 description: "My description",
                 isLoading: false
